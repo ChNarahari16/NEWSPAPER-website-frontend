@@ -1,0 +1,201 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.breaking-news {
+    background-color: #ffc107;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carousel-item {
+    display: none;
+
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+.card a.btn {
+    text-decoration: none;
+}
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.news-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.news-item {
+    display: inline-block;
+    width: 300px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item h5 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #343a40;
+}
+
+.news-item p {
+    padding: 0 10px 10px;
+    color: #6c757d;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 0.5rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
